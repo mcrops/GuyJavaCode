@@ -4,5 +4,10 @@
     <string name="app_name">White Fly Counter</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_type">Type</string>
+    <string name="msg_default_time">Time</string>
+    <string name="msg_default_meta">Metadata</string>
+    <string name="msg_default_status">Place a cassava leaft inside the viewfinder rectangle to scan it.</string>
 
 </resources>

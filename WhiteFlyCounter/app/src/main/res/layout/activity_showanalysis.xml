@@ -1,9 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="0dp"
-    android:paddingRight="0dp"
-    android:paddingTop="0dp"
-    android:paddingBottom="0dp" tools:context=".MainActivity">
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" >
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,15 +9,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Analysis Results"
         android:id="@+id/textViewTitle"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Analysis Results"
-        android:id="@+id/textViewCount"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -33,4 +22,18 @@
         android:layout_below="@+id/textViewTitle"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true" >
+
+    <Button
+        android:id="@+id/recorder_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shutter_normal" />
+
+</RelativeLayout>
+
 </RelativeLayout>
