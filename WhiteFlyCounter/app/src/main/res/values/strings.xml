@@ -9,5 +9,9 @@
     <string name="msg_default_time">Time</string>
     <string name="msg_default_meta">Metadata</string>
     <string name="msg_default_status">Place a cassava leaft inside the viewfinder rectangle to scan it.</string>
-
+    <string name="save_story_as">Save As</string>
+    <string name="story_summary">Summary</string>
+    <string name="save_person_name_as">Person</string>
+    <string name="save_person_contact_as">Contact</string>
+    <string name="quit_entry">Quit</string>
 </resources>

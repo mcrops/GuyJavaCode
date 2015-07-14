@@ -554,6 +554,12 @@ public class FFmpegRecorderActivity extends Activity implements View.OnClickList
         }
         @Override
         public void onPreviewFrame(final byte[] data, Camera camera) {
+
+            if (!mFolder.exists()) {
+                mFolder.mkdir();
+            }
+
+
 			/* get video data */
             long frameTimeStamp = 0L;
 
