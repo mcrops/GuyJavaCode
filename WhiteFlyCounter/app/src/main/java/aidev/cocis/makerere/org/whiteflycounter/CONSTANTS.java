@@ -5,8 +5,20 @@ package aidev.cocis.makerere.org.whiteflycounter;
  */
 import android.os.Environment;
 
+import java.io.File;
+
 public class CONSTANTS {
 
+    /**
+            * Should we should logs to the user
+    */
+    public static final boolean LOG = true;
+    /**
+     * Application preferences name as used in android
+     */
+    public static final String PREFS_NAME = "WhiteFlyCounterPreferences";
+    public static final String TAG_NAME = "WhiteFlyCounter";
+    public static final String FOLDER =Environment.getExternalStorageDirectory() + File.separator+"whiteflycounter";
     public final static String METADATA_REQUEST_BUNDLE_TAG = "requestMetaData";
     public final static String FILE_START_NAME = "VMS_";
     public final static String VIDEO_EXTENSION = ".mp4";

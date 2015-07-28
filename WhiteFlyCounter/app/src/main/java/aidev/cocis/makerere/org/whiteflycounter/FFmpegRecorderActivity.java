@@ -91,7 +91,7 @@ public class FFmpegRecorderActivity extends Activity implements View.OnClickList
     private opencv_core.CvMemStorage storage;
     private opencv_core.Rect white_flies = new opencv_core.Rect();
     int tt = 0;
-    File mFolder = new File(Environment.getExternalStorageDirectory() + File.separator+"whiteflycounter");
+    File mFolder = new File(CONSTANTS.FOLDER);
 
     private final static String CLASS_LABEL = "RecordActivity";
 

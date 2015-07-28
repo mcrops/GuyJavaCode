@@ -21,6 +21,55 @@
         android:orientation="vertical"
         android:padding="10dp" >
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save_story_as"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/save_story_as"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/save_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="21sp" />
+        
+         <TextView
+            android:id="@+id/storytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/story_summary"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/storysummary"
+            android:layout_width="fill_parent"
+            android:layout_height="172dp"
+            android:inputType="text"
+            android:textSize="21sp" />
+        
         <TextView
             android:id="@+id/save_person_name_txt"
             android:layout_width="wrap_content"
@@ -53,6 +102,14 @@
             android:inputType="text"
             android:textSize="21sp" />
 
+        <CheckBox
+            android:id="@+id/mark_finished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="10dp"
+            android:text="@string/mark_finished"
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/save_exit_button"
@@ -60,9 +117,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:padding="20dp"
-            android:text="Complete"
+            android:text="@string/quit_entry"
             android:textSize="21sp" />
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
     </LinearLayout>
 
 </ScrollView>

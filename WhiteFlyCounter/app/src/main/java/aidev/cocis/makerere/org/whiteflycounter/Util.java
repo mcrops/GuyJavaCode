@@ -339,4 +339,21 @@ public class Util {
         t.show();
         return t;
     }
+
+    public static void LogE( String msg) {
+        if(CONSTANTS.LOG)
+            android.util.Log.e(CONSTANTS.TAG_NAME, msg);
+    }
+    public static void LogI( String msg) {
+        if(CONSTANTS.LOG)
+            android.util.Log.i(CONSTANTS.TAG_NAME, msg);
+    }
+    public static void LogD( String msg) {
+        if(CONSTANTS.LOG)
+            android.util.Log.d(CONSTANTS.TAG_NAME, msg);
+    }
+    public static void LogV( String msg) {
+        if(CONSTANTS.LOG)
+            android.util.Log.v(CONSTANTS.TAG_NAME, msg);
+    }
 }
