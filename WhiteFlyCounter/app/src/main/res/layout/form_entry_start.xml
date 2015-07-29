@@ -15,17 +15,29 @@
     android:fillViewport="true"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:gravity="center_vertical"
         android:padding="10dp" >
 
+        <ImageView
+            android:id="@+id/form_start_bling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:contentDescription="@+id/description"
+            android:paddingBottom="30dp"
+            android:scaleType="center" />
 
         <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/form_start_bling"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:gravity="center"
             android:lineSpacingMultiplier="1.2"
@@ -34,55 +46,45 @@
             android:textSize="21sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/save_story_as"
+        <ImageView
+            android:id="@+id/image_backup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/description"
+            android:contentDescription="@+string/backup"
             android:gravity="left"
-            android:lineSpacingMultiplier="1.2"
-            android:text="Field No"
-            android:textSize="21sp" />
-
-        <EditText
-            android:id="@+id/save_title"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:textSize="21sp" />
+            android:src="@+drawable/backup" />
 
         <TextView
-            android:id="@+id/storytxt"
+            android:id="@+id/text_backup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/image_backup"
             android:gravity="left"
-            android:lineSpacingMultiplier="1.2"
-            android:text="Description"
+            android:text="@+string/backup"
             android:textSize="21sp" />
 
-        <EditText
-            android:id="@+id/storysummary"
-            android:layout_width="fill_parent"
-            android:layout_height="172dp"
-            android:inputType="text"
-            android:textSize="21sp" />
-
-
-
-
-
-        <Button
-            android:id="@+id/startSurvey"
-            android:layout_width="fill_parent"
+        <ImageView
+            android:id="@+id/image_advance"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:padding="20dp"
-            android:text="Start Survey"
-            android:textSize="21sp" />
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/description"
+            android:contentDescription="@+string/advance"
+            android:gravity="right"
+            android:src="@+drawable/advance" />
 
-        <View
-            android:layout_width="fill_parent"
+        <TextView
+            android:id="@+id/text_advance"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1.0" />
-    </LinearLayout>
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/image_advance"
+            android:gravity="right"
+            android:text="@+string/advance"
+            android:textSize="21sp" />
+    </RelativeLayout>
 
 </ScrollView>

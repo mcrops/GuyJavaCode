@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flockofbirds.mande.views.TwoItemMultipleChoiceView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingRight="8dip"
+	android:paddingLeft="8dip"
+	android:paddingTop="4dip"
+	android:paddingBottom="8dip"
+	android:minHeight="?android:attr/listPreferredItemHeight">
+   	
+	<ImageView
+	    android:id="@+id/img"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_alignParentLeft="true"
+	    android:src="@drawable/ic_launcher" />
+
+
+	<CheckBox
+	    android:id="@+id/checkbox"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/img"
+	    android:clickable="false"
+	    android:focusable="false" />
+
+	<TextView
+	    android:id="@+id/text1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/img"
+	    android:layout_toRightOf="@+id/img"
+	    android:text="Medium Text"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</com.flockofbirds.mande.views.TwoItemMultipleChoiceView>

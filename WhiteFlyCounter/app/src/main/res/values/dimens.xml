@@ -4,4 +4,24 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="standard_padding">8dip</dimen>
     <dimen name="half_padding">4dip</dimen>
+    <dimen name="standard_spacing">5.0dip</dimen>
+    <dimen name="spacingencode">35.0dip</dimen>
+    <dimen name="list_row_padding_5dip">5.0dip</dimen>
+    <dimen name="list_margin_below_minus_5dip">-5.0dip</dimen>
+    <dimen name="user_image_size">48.0dip</dimen>
+    <dimen name="button_padding">8.0dip</dimen>
+    <dimen name="mini_user_image_size">32.0dip</dimen>
+    <dimen name="list_row_padding">10.0dip</dimen>
+    <dimen name="font_size_xlarge">48.0sp</dimen>
+    <dimen name="font_size_large">32.0sp</dimen>
+    <dimen name="font_size_default">28.0sp</dimen>
+    <dimen name="font_size_small">24.0sp</dimen>
+    <dimen name="font_size_xsmall">12.0sp</dimen>
+    <dimen name="text_single_line_height">18.0sp</dimen>
+    <dimen name="list_preferred_height">44.0dip</dimen>
+    <dimen name="divider_thickness">1.0dip</dimen>
+    <dimen  name="tabbar_height">50.0dip</dimen>
+    <dimen  name="subnav">30.0dip</dimen>
+    <dimen  name="shadow_width">3.0dip</dimen>
+    <dimen  name="slidingmenu_offset">55.0dip</dimen>
 </resources>

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"    
+    android:background="@color/solid_white"
+    tools:context=".Home" >
+
+    <RelativeLayout android:orientation="vertical" 
+        android:background="@color/solid_light_gray_4"
+        android:layout_width="match_parent"
+        android:padding="@dimen/standard_spacing"
+        android:layout_centerInParent="true"
+         android:layout_height="200dip">
+        <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewEmail"
+        android:textColor="@color/solid_black"
+        android:padding="@dimen/standard_spacing"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+        android:layout_below="@+id/textViewEmail"
+        android:id="@+id/editTextEmail"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:background="@color/solid_white"
+        android:padding="@dimen/standard_spacing"
+        android:textColor="@color/solid_black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+        android:layout_below="@+id/editTextEmail"
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewPassword"
+        android:textColor="@color/solid_black"
+        android:padding="@dimen/standard_spacing"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_below="@+id/textViewPassword"
+        android:inputType="textPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"      
+        android:padding="@dimen/standard_spacing"  
+        android:background="@color/solid_white"
+        android:textColor="@color/solid_black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClick"
+            android:text="@string/buttonLogin" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textViewFOBUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/aidevurl"
+        android:textColor="@color/redcolor"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
